@@ -2,5 +2,11 @@
 
 public class Career : Content
 {
-    public int Courses { get; set; }
+    public IList<CareerItem> Items { get; set; }
+    public int TotalCourses => Items.Count; //Expression Body
+
+    public Career(string title, string url) : base(title, url)
+    {
+        Items = new List<CareerItem>();
+    }
 }

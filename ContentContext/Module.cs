@@ -1,6 +1,8 @@
-﻿namespace BaltaOOP.ContentContext;
+﻿using BaltaOOP.SharedContext;
+
+namespace BaltaOOP.ContentContext;
 using System.Collections.Generic;
-public class Module
+public class Module : BaseContent
 {
     public int Order { get; set; }
     public string Title { get; set; }
